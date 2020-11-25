@@ -12,6 +12,11 @@ if [ -e $DASHBOARD_DIRECTORY ]; then
     rm -rf $DASHBOARD_DIRECTORY
 fi
 
+if [ -e $LOG_FILE ]; then
+    echo Remove $LOG_FILE
+    rm -f $LOG_FILE
+fi
+
 # execute jmeter
 $APP_FILE -n -t $JMX_FILE -l $LOG_FILE -p $PROPERTIES_FILE
 $APP_FILE -g $LOG_FILE -o $DASHBOARD_DIRECTORY
