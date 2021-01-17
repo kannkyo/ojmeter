@@ -4,4 +4,5 @@ cd `dirname $0`
 source setup.sh
 
 # execute jmeter
-bash $APP_FILE
+echo bash $APP_FILE $@
+     bash $APP_FILE $@
