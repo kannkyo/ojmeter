@@ -1,4 +1,5 @@
 #!/bin/bash
+cd `dirname $0`
 
 # see 
 #   official manual - https://jmeter.apache.org/usermanual/get-started.html#running
@@ -22,7 +23,7 @@ fi
 
 if [ ! -e $ZIP_FILE ]; then
     echo Download $ZIP_FILE
-    curl https://ftp.kddi-research.jp/infosystems/apache//jmeter/binaries/apache-jmeter-5.3.zip -o $ZIP_FILE
+    curl https://ftp.kddi-research.jp/infosystems/apache/jmeter/binaries/$JMETER.zip -o $ZIP_FILE
 fi
 
 if [ ! -e $APP_DIRECTORY ]; then
