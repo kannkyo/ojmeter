@@ -1,6 +1,6 @@
 # jmeter
 
-## 使い方
+## ツールの使い方
 
 ### GUI
 
@@ -21,3 +21,7 @@ propertiesファイルはなくても良い。なお、GUIモードで負荷試�
 ```
 
 propertiesファイルはなくても良い。
+
+## Jmeterの使い方
+
+[jmeter.md](jmeter.md) 参照。
